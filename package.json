@@ -1,0 +1,40 @@
+{
+  "name": "projet",
+  "version": "0.0.1",
+  "main": "main.js",
+  "repository": "https://github.com/FluGhost/bot-gck.git",
+  "author": "FluGhost <fluvio.371@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "discordjs/discord.js"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-config-aqua": "^7.1.2"
+  },
+  "eslintConfig": {
+    "extends": "aqua/node",
+    "rules": {
+      "quotes": [
+        "off",
+        "double"
+      ],
+      "linebreak-style": [
+        "warn",
+        "windows"
+      ],
+      "spaced-comment": [
+        "warn"
+      ],
+      "indent": [
+        "error",
+        2
+      ],
+      "curly": "warn",
+      "prefer-const": [
+        "off"
+      ],
+      "no-new-wrappers": "error"
+    }
+  }
+}
