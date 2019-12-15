@@ -22,6 +22,7 @@ client.on("ready", () => {
 });
 
 client.on("message", msg => {
+  // let easterEgg = 0;
   if (msg.author.bot) return;
   if (msg.content.startsWith(json.prefix)) {
     const args = msg.content.slice(json.prefix.length).split(/ +/);
@@ -124,15 +125,17 @@ client.on("message", msg => {
           if (user.tag === "FluGhost#7007") {
             // si le tag est moi-même
             msg.author.createDM().then(channel => {
-              channel.send(
-                "Hey ! You have found the easter egg of the bot !! GG !"
-              );
+              channel.send("Hey ! You have found the easter egg !! GG !");
             });
+            // console
             console.log(`${msg.author.tag} a trouvé l'easter egg !!`);
-            let numberNameJson = 0;
-            let newEGFound = (`${numberNameJson}`, `${user.tag}`);
+            // écrire dans le JSON le nom de la personne qui a trouvé l'EG
+            let newEGFound = { easterEgg$eg: [msg.author.tag] };
+            // envoyer newEGFound dans le JSON
             let dataEG = JSON.stringify(newEGFound);
-            fs.writeFileSync(`easterEgg.json`, dataEG);
+            fs.writeFile(`easterEgg.json`, dataEG);
+
+            // eg += 1;
           }
         } else {
           // Si il n'y a pas d'ID
@@ -148,7 +151,8 @@ client.on("message", msg => {
 					const voiceChannelAdd = new Discord.GuildChannel()
 						.type("voice")
 						.clone();
-				}
+				} else {
+        }
 			} else {
 				msg.reply("You must write an argument : `delete` or `add`.");
 			}
