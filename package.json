@@ -28,7 +28,7 @@
       ],
       "indent": [
         "error",
-        2
+        4
       ],
       "curly": "warn",
       "prefer-const": [
