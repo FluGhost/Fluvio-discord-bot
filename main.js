@@ -22,7 +22,7 @@ client.on("ready", () => {
 });
 
 client.on("message", msg => {
-    // let easterEgg = 0;
+    let easterEgg = 0;
     if (msg.author.bot) return;
     if (msg.content.startsWith(json.prefix)) {
         const args = msg.content.slice(json.prefix.length).split(/ +/);
@@ -125,12 +125,14 @@ client.on("message", msg => {
                         // console
                         console.log(`${msg.author.tag} a trouvé l'easter egg !!`);
                         // écrire dans le JSON le nom de la personne qui a trouvé l'EG
-                        let newEGFound = { easterEgg$eg: [msg.author.tag] };
+                        let userEg = msg.author.tag;
+                        // let newEGFound = { ( new Number(easterEgg)  msg.author.tag ) };
                         // envoyer newEGFound dans le JSON
-                        let dataEG = JSON.stringify(newEGFound);
-                        fs.writeFile(`easterEgg.json`, dataEG);
+                        let dataEG = JSON.stringify([userEg], null, 4);
+                        fs.writeFile(`easterEgg.json`, dataEG, err => { if (err) console.log(err); });
 
-                    // eg += 1;
+                        easterEgg++;
+                        console.log(easterEgg);
                     }
                 } else {
                 // Si il n'y a pas d'ID

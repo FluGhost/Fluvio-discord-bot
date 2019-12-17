@@ -1,5 +1,12 @@
+# Discord.js modules
 node_modules/
+
+# Configuration : { token, prefix, author, name,... }
 config.json
+
+# [...]
 easterEgg.json
+
+# VSCode configuration.
 .vscode/
 yarn.lock
