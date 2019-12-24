@@ -16,6 +16,12 @@ This file is in French, sorry !
 ## Utilisation
 
 Je vais donner les IDs des commandes pour se repérer. <br/>
-Le numéro des fonctions **principales** se distinguent grâce à leurs `*` au début.
+Le numéro des fonctions **principales** se distinguent grâce à leurs `#` au début.
 
 #### `01`
+
+* **#** Doit donner toutes les commandes.
+* Doit donner les arguments des commandes.
+* Doit donner une légende pour ces arguments :
+ * `<>` : arguments **optionnels**
+ * `[]` : arguments **non-optionnels**
