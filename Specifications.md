@@ -20,8 +20,13 @@ Le numéro des fonctions **principales** se distinguent grâce à leurs `#` au d
 
 #### `01`
 
-* **#** Doit donner toutes les commandes.
+* **#** Doit donner toutes les commandes et le préfixe.
 * Doit donner les arguments des commandes.
 * Doit donner une légende pour ces arguments :
- * `<>` : arguments **optionnels**
- * `[]` : arguments **non-optionnels**
+  * `<>` : arguments **optionnels**
+  * `[]` : arguments **non-optionnels**
+* Doit expliquer clairement et courtement chaque commande.
+* Doit être lisible et esthétique :
+  * Les commandes doivent êtrent dans des catégories.
+  * Des émojis sont utilisés pour représenter chaque catégorie.
+* Doit avoir une catégorie "commandes test" ou "commandes alpha" qui contient le principe des prochaines commandes mais **sans donner leurs noms !** Car l´utilisateur pourrait très bien l´exécuter et faire *crash* le bot.
