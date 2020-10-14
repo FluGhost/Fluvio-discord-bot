@@ -19,10 +19,6 @@
         "off",
         "double"
       ],
-      "linebreak-style": [
-        "warn",
-        "windows"
-      ],
       "spaced-comment": [
         "warn"
       ],
@@ -34,7 +30,10 @@
       "prefer-const": [
         "off"
       ],
-      "no-new-wrappers": "error"
+      "no-new-wrappers": "error",
+      "space-before-blocks": "off",
+      "no-shadow-restricted-names": "off",
+      "linebreak-style": "off"
     }
   }
 }
