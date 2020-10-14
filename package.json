@@ -32,8 +32,12 @@
       ],
       "no-new-wrappers": "error",
       "space-before-blocks": "off",
+<<<<<<< HEAD
       "no-shadow-restricted-names": "off",
       "linebreak-style": "off"
+=======
+      "no-shadow-restricted-names": "off"
+>>>>>>> d696bbd6f5237205ce57d8a7b6865fa1c057b3f1
     }
   }
 }

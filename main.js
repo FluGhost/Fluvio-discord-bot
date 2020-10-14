@@ -15,7 +15,10 @@ client.commands.set("ping", require("./commands/ping.js"));
 client.commands.set("test", require("./commands/test.js"));
 client.commands.set("achievement", require("./commands/achievement.js"));
 client.commands.set("chocolate", require("./commands/chocolate.js"));
+<<<<<<< HEAD
 client.commands.set("invite", require("./commands/invite.js"));
+=======
+>>>>>>> d696bbd6f5237205ce57d8a7b6865fa1c057b3f1
 
 client.on("ready", () => require("./events/ready.js")(client));
 client.on("message", msg => require("./events/message.js")(client, msg, language));

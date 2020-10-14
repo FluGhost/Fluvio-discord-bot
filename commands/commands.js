@@ -32,9 +32,13 @@ exports.FRHELP = {
             value: `__**Préfixe**__ : \`${json.prefix}\` \n
             :pushpin: **Commandes stables :** 
             \n \`${json.prefix}help\` : C'est le message d'aide. Vous êtes sur cette commande ! 
+<<<<<<< HEAD
             \n \`${json.prefix}avatar\` + [\`@user\`] : Cela va vous donner votre avatar ou l'avatar d'une autre personne si mentionée en deuxième argument et vous pouvez les télécharger. 
             \n \`${json.prefix}ping\` : Cela va vous donner la latence du bot. 
             \n \`${json.prefix}chocolate\` : Cela va vous donner du chocolat...particulier.`
+=======
+            \n \`${json.prefix}avatar\` + [\`@user\`] : Cela va vous donner votre avatar ou l'avatar d'une autre personne si mentionée en deuxième argument et vous pouvez les télécharger. \n \`${json.prefix}ping\` : Cela va vous donner la latence du bot.`
+>>>>>>> d696bbd6f5237205ce57d8a7b6865fa1c057b3f1
         },
         {
             name: "\u200b",
@@ -93,6 +97,7 @@ exports.FREGDM = ":tada: Hey ! Tu a trouvé l'easter egg du bot ! GG !";
 
 exports.FRAVATARNOTUSER = `:crossed_swords: Vous n'utilisez pas les bons arguments. Merci de lire ceci pour plus d'informations : \`${json.prefix}help\``;
 
+<<<<<<< HEAD
 exports.FRABOUT = {
     title: "__**A propos.**__",
     description: "Hey, je suis Fluvio : un bot cool !",
@@ -116,6 +121,27 @@ exports.FRABOUT = {
 };
 
 /**  EN
+=======
+exports.FRCAKE0 = ":one: Récolte de Cabosse...";
+exports.FRCAKE1 = ":two: Escabossage...";
+exports.FRCAKE2 = ":tree: Fermentation...";
+exports.FRCAKE3 = ":four: Séchage...";
+exports.FRCAKE4 = ":five: Torréfaction...";
+exports.FRCAKE5 = ":six: Décorticage...";
+exports.FRCAKE6 = ":seven: Broyage...";
+exports.FRCAKE7 = ":eight: Malaxage...";
+exports.FRCAKE8 = ":nine: Conchage...";
+exports.FRCAKE9 = ":ten: Tempérage...";
+exports.FRCAKE10 = ":one: :one: Moulage et enrobage...";
+exports.FRCAKE11 = "Voilà !!";
+exports.FRCAKE13 = {
+    image: {
+        url: "assets/chocolate.jpg"
+    }
+};
+
+// EN
+>>>>>>> d696bbd6f5237205ce57d8a7b6865fa1c057b3f1
 exports.ENPING = {
     title: "Pong !",
     color: json.colorEmbed,
@@ -134,8 +160,13 @@ exports.ENHELP = {
         {
             name: "\u200b",
             value: `__**Prefix**__ : \`${json.prefix}\` \n
+<<<<<<< HEAD
             :pushpin: **Relase commands :**
             \n \`${json.prefix}help\` : This is the help message. And you are on this command.
+=======
+            :pushpin: **Relase commands :** 
+            \n \`${json.prefix}help\` : This is the help message. And you are on this command. 
+>>>>>>> d696bbd6f5237205ce57d8a7b6865fa1c057b3f1
             \n \`${json.prefix}avatar\` + [\`@user\`] : This will give you your avatar, or the avatar of an other user if you tag it, and you can download it. \n \`${json.prefix}ping\` : This will give you the ping of the bot.`
         },
         {
@@ -146,7 +177,11 @@ exports.ENHELP = {
             name: "This commands will be crash the bot or be nothing.",
             value: `\`${json.prefix}about\` : Informations about the bot and his creator.`
         },
+<<<<<<< HEAD
         /* légende */ /*
+=======
+        /* légende */
+>>>>>>> d696bbd6f5237205ce57d8a7b6865fa1c057b3f1
         {
             name: '\u200b',
             value: '\u200b'
@@ -155,8 +190,13 @@ exports.ENHELP = {
             name: "**Caption**",
             value: "[] = optional argument. \n () = not optional argument."
         }
+<<<<<<< HEAD
     ], */
 /* autres params */ /*
+=======
+    ],
+    /* autres params */
+>>>>>>> d696bbd6f5237205ce57d8a7b6865fa1c057b3f1
     color: json.colorEmbed,
     footer: {
         text: `Bot created by : ${json.author}`,
@@ -167,11 +207,18 @@ exports.ENHELP = {
 
 exports.ENAVATARME = {
     title: "This is your avatar !",
+<<<<<<< HEAD
     // .setURL(`${msg.author.displayAvatarURL()}`) */
 /**
     description: "Click on the blue title text to open this image on your browser. So you can download it.", */
 // image(msg.author.displayAvatarURL())
 /* params */ /*
+=======
+    // .setURL(`${msg.author.displayAvatarURL()}`)
+    description: "Click on the blue title text to open this image on your browser. So you can download it.",
+    // image(msg.author.displayAvatarURL())
+    /* params */
+>>>>>>> d696bbd6f5237205ce57d8a7b6865fa1c057b3f1
     color: json.colorEmbed,
     footer: {
         text: `Bot created by : ${json.author}`,
@@ -180,6 +227,7 @@ exports.ENAVATARME = {
 };
 
 exports.ENAVATARAUTHER = {
+<<<<<<< HEAD
     */
 // title: `This is the avatar of ${user.tag} !`
 // url: `${user.displayAvatarURL()}`
@@ -189,6 +237,14 @@ exports.ENAVATARAUTHER = {
         url: user.displayAvatarURL()
     } */
 /**
+=======
+    // title: `This is the avatar of ${user.tag} !`
+    // url: `${user.displayAvatarURL()}`
+    description: "Click on the title text to open this image on your browser. So you can download it.",
+    /* image: {
+        url: user.displayAvatarURL()
+    } */
+>>>>>>> d696bbd6f5237205ce57d8a7b6865fa1c057b3f1
     color: json.colorEmbed,
     // params
     footer: {
@@ -200,4 +256,7 @@ exports.ENAVATARAUTHER = {
 exports.ENEGDM = ":tada: Hey ! You have found the easter egg of the bot ! GG !";
 
 exports.ENAVATARNOTUSER = `:crossed_swords: You don't use the corrects aguments. Please read this for more informations : \`${json.prefix}help\``;
+<<<<<<< HEAD
 */
+=======
+>>>>>>> d696bbd6f5237205ce57d8a7b6865fa1c057b3f1
